@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Space Orbit Logo</title>
+  <desc id="desc">A minimal planet with a ring and small stars, suitable as a website logo.</desc>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7C8BFF"/>
+      <stop offset="50%" stop-color="#6CDCF9"/>
+      <stop offset="100%" stop-color="#8AF3C6"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- background is transparent by default -->
+
+  <!-- stars -->
+  <g fill="#EAF4FF">
+    <circle cx="18" cy="28" r="2"/>
+    <circle cx="104" cy="24" r="1.8"/>
+    <circle cx="110" cy="88" r="2.2"/>
+    <circle cx="28" cy="102" r="1.6"/>
+    <path d="M68 10l1.5 4.6L74 16l-4.5 1.4L68 22l-1.5-4.6L62 16l4.5-1.4z"/>
+  </g>
+
+  <!-- orbit ring -->
+  <g opacity="0.95" filter="url(#soft)">
+    <ellipse cx="64" cy="72" rx="44" ry="18" fill="none" stroke="#CFE9FF" stroke-width="6"/>
+    <ellipse cx="64" cy="72" rx="44" ry="18" fill="none" stroke="url(#g)" stroke-width="3"/>
+  </g>
+
+  <!-- planet -->
+  <g filter="url(#soft)">
+    <circle cx="64" cy="64" r="28" fill="url(#g)"/>
+    <path d="M44 58c8 2 32 2 40 0 1.5 6-4 16-12 20-8 4-18 3-26-3-5-4-6-11-2-17z"
+          fill="rgba(0,0,0,0.08)"/>
+  </g>
+
+  <!-- cut ring behind planet for a clean overlap -->
+  <mask id="planetMask">
+    <rect width="128" height="128" fill="white"/>
+    <circle cx="64" cy="64" r="28" fill="black"/>
+  </mask>
+  <g mask="url(#planetMask)">
+    <ellipse cx="64" cy="72" rx="44" ry="18" fill="none" stroke="#CFE9FF" stroke-width="6"/>
+    <ellipse cx="64" cy="72" rx="44" ry="18" fill="none" stroke="url(#g)" stroke-width="3"/>
+  </g>
+</svg>
