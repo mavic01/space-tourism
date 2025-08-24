@@ -1,6 +1,5 @@
-
 import { useState } from "react";
-import { Menu, X } from "lucide-react"; 
+import { Menu, X } from "lucide-react";
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
@@ -8,7 +7,11 @@ const Nav = () => {
     <nav className="sticky top-0 left-0 w-full md:px-0 px-10 lg:py-6 md:py-0 py-6 lg:pl-4 md:pl-7">
       <div className="relative flex justify-between  items-center">
         <div className="flex items-center justify-center">
-          <img className="md:w-12 md:h-12 w-10 h-10" src="/logo.png" alt="Logo" />
+          <img
+            className="md:w-12 md:h-12 w-10 h-10"
+            src="/logo.png"
+            alt="Logo"
+          />
         </div>
 
         {/* Hamburger */}
@@ -58,35 +61,49 @@ const Nav = () => {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden bg-[#191B26] px-6 py-6 space-y-6 font-barlow-condensed border-t border-white/20">
-          <a
-            href="/"
-            className="block text-white text-lg hover:text-gray-200 transition-colors"
+        <div
+          className={`fixed top-0 right-0 h-full w-2/3 bg-[#191B26] px-6 py-6 space-y-6 font-barlow-condensed border-l border-white/20 transform transition-transform duration-300 ease-in-out ${
+            open ? "translate-x-0" : "translate-x-full"
+          } md:hidden z-50`}
+        >
+          {/* Close */}
+          <button
+            className="absolute top-6 right-6 text-white"
+            onClick={() => setOpen(false)}
           >
-            <span className="font-bold mr-2">00</span>
-            Home
-          </a>
-          <a
-            href="/destination"
-            className="block text-white text-lg hover:text-gray-200 transition-colors"
-          >
-            <span className="font-bold mr-2">01</span>
-            Destination
-          </a>
-          <a
-            href="/crew"
-            className="block text-white text-lg hover:text-gray-200 transition-colors"
-          >
-            <span className="font-bold mr-2">02</span>
-            Crew
-          </a>
-          <a
-            href="/technology"
-            className="block text-white text-lg hover:text-gray-200 transition-colors"
-          >
-            <span className="font-bold mr-2">03</span>
-            Technology
-          </a>
+            <X size={28} />
+          </button>
+
+          <div className="mt-12 space-y-6">
+            <a
+              href="/"
+              className="block text-white text-lg hover:text-gray-200 transition-colors"
+            >
+              <span className="font-bold mr-2">00</span>
+              Home
+            </a>
+            <a
+              href="/destination"
+              className="block text-white text-lg hover:text-gray-200 transition-colors"
+            >
+              <span className="font-bold mr-2">01</span>
+              Destination
+            </a>
+            <a
+              href="/crew"
+              className="block text-white text-lg hover:text-gray-200 transition-colors"
+            >
+              <span className="font-bold mr-2">02</span>
+              Crew
+            </a>
+            <a
+              href="/technology"
+              className="block text-white text-lg hover:text-gray-200 transition-colors"
+            >
+              <span className="font-bold mr-2">03</span>
+              Technology
+            </a>
+          </div>
         </div>
       )}
     </nav>
@@ -94,5 +111,3 @@ const Nav = () => {
 };
 
 export default Nav;
-
-
