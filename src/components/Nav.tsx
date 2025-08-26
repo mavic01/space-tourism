@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const Nav = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState<boolean>(false);
   return (
     <nav className="sticky top-0 left-0 w-full md:px-0 px-10 lg:py-6 md:py-0 py-6 lg:pl-4 md:pl-7">
       <div className="relative flex justify-between  items-center">
@@ -19,10 +19,10 @@ const Nav = () => {
           className="md:hidden text-white cursor-pointer"
           onClick={() => setOpen(!open)}
         >
-          {open ? <X size={28} /> : <Menu size={28} />}
+          <Menu size={28} />
         </button>
 
-        <div className="bg-white w-[42%] h-[0.01rem] z-40 absolute left-24 hidden lg:flex"></div>
+        <div className="bg-white w-[42%] h-[0.01rem] z-40 absolute left-24 hidden opacity-[0.5] lg:flex"></div>
 
         <div className="hidden md:flex space-x-8 md:bg-[#191B26] lg:bg-white/10 lg:backdrop-blur-md px-32 py-6 font-barlow-condensed shadow-lg border border-white/20">
           <a
@@ -62,7 +62,7 @@ const Nav = () => {
       {/* Mobile Menu */}
       {open && (
         <div
-          className={`fixed top-0 right-0 h-full w-2/3 bg-[#191B26] px-6 py-6 space-y-6 font-barlow-condensed border-l border-white/20 transform transition-transform duration-300 ease-in-out ${
+          className={`fixed top-0 right-0 h-full w-2/3 bg-[#191B26]/40 backdrop-blur-md px-6 py-6 space-y-6 font-barlow-condensed border-l border-white/20 transform transition-transform duration-300 ease-in-out ${
             open ? "translate-x-0" : "translate-x-full"
           } md:hidden z-50`}
         >
