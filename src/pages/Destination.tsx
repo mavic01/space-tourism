@@ -11,12 +11,12 @@ const Destination = () => {
           <span className="mr-4 opacity-[0.5]">01</span>PICK YOUR DESTINATION
         </h1>
 
-        <div className="md:px-40 px-14 flex lg:flex-row flex-col mt-12 mb-4 gap-20">
+        <div className="md:px-40 px-10 flex lg:flex-row flex-col mt-12 mb-4 lg:gap-28 gap-14">
           {/* Left Moon and co. */}
-          {activeTab === "MOON" && <img className="lg:w-90 lg:h-90 lg:self-start md:w-60 md:h-60 md:mx-auto w-full h-auto" src="/image-moon.png" alt="Moon Image" />}
-          {activeTab === "MARS" && <img className="lg:w-90 lg:h-90 lg:self-start md:w-60 md:h-60 md:mx-auto w-full h-auto" src="/image-mars.png" alt="Moon Image" />}
-          {activeTab === "EUROPA" && <img className="lg:w-90 lg:h-90 lg:self-start md:w-60 md:h-60 md:mx-auto w-full h-auto" src="/image-europa.png" alt="Moon Image" />}
-          {activeTab === "TITAN" && <img className="lg:w-90 lg:h-90 lg:self-start md:w-60 md:h-60 md:mx-auto w-full h-auto" src="/image-titan.png" alt="Moon Image" />}
+          {activeTab === "MOON" && <img className="lg:w-90 lg:h-90 lg:self-start md:w-60 md:h-60 md:mx-auto w-40 h-40 mx-auto" src="/image-moon.png" alt="Moon Image" />}
+          {activeTab === "MARS" && <img className="lg:w-90 lg:h-90 lg:self-start md:w-60 md:h-60 md:mx-auto w-40 h-40 mx-auto" src="/image-mars.png" alt="Moon Image" />}
+          {activeTab === "EUROPA" && <img className="lg:w-90 lg:h-90 lg:self-start md:w-60 md:h-60 md:mx-auto w-40 h-40 mx-auto" src="/image-europa.png" alt="Moon Image" />}
+          {activeTab === "TITAN" && <img className="lg:w-90 lg:h-90 lg:self-start md:w-60 md:h-60 md:mx-auto w-40 h-40 mx-auto" src="/image-titan.png" alt="Moon Image" />}
           
           {/* Right */}
           <div className="md:mt-2">
@@ -31,7 +31,7 @@ const Destination = () => {
             {activeTab === "MOON" && (
               <div className="flex flex-col justify-center lg:justify-start my-8 max-w-lg text-center lg:text-left">
                 <h1 className="lg:text-6xl md:text-5xl text-4xl text-white font-bellefair">MOON</h1>
-                <p className="text-[#D0D6F9] text-justify text-lg md:text-center lg:text-left font-barlow leading-relaxed">
+                <p className="text-[#D0D6F9]  text-lg text-center lg:text-left font-barlow leading-relaxed sm:mt-0 mt-4">
                   See our planet as you’ve never seen it before. A perfect
                   relaxing trip away to help regain perspective and come back
                   refreshed. While you’re there, take in some history by
