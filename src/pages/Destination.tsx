@@ -7,7 +7,7 @@ const Destination = () => {
     <div className="min-h-screen lg:bg-[url('/background-destination-desktop.jpg')] md:bg-[url('/background-destination-tablet.jpg')]  bg-[url('/background-destination-mobile.jpg')] bg-cover bg-center bg-no-repeat">
       <Nav />
       <main className="flex align-center flex-col md:mt-10">
-        <h1 className="lg:px-32 font-barlow-condensed text-white lg:text-2xl md:text-lg md:px-8 text-center md:text-left tracking-[0.25em]">
+        <h1 className="lg:px-24 font-barlow-condensed text-white lg:text-xl md:text-lg md:px-8 text-center md:text-left tracking-[0.25em]">
           <span className="mr-4 opacity-[0.5]">01</span>PICK YOUR DESTINATION
         </h1>
 
