@@ -1,7 +1,7 @@
 import Nav from "../components/Nav.tsx";
 const Home = () => {
   return (
-    <div className="min-h-screen lg:bg-[url('/background-home-desktop.jpg')] md:bg-[url('/background-home-tablet.jpg')]  bg-[url('/background-home-mobile.jpg')] bg-cover bg-center bg-no-repeat">
+    <section className="min-h-screen lg:bg-[url('/background-home-desktop.jpg')] md:bg-[url('/background-home-tablet.jpg')]  bg-[url('/background-home-mobile.jpg')] bg-cover bg-center bg-no-repeat">
       <Nav />
       <main className="flex items-center lg:justify-between md:mx-auto mx-auto flex-col space-y-16 md:space-y-8 lg:flex-row mt-[90px] md:px-32 w-[88%]">
         <div className="max-w-lg md:space-y-4 space-y-6 md:text-center text-center lg:text-left leading-relaxed">
@@ -20,7 +20,7 @@ const Home = () => {
           EXPLORE
         </div>
       </main>
-    </div>
+    </section>
   );
 };
 

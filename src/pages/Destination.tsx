@@ -4,7 +4,7 @@ import Nav from "../components/Nav";
 const Destination = () => {
   const [activeTab, setActivetab] = useState<string>("MOON");
   return (
-    <div className="min-h-screen lg:bg-[url('/background-destination-desktop.jpg')] md:bg-[url('/background-destination-tablet.jpg')]  bg-[url('/background-destination-mobile.jpg')] bg-cover bg-center bg-no-repeat">
+    <section className="min-h-screen lg:bg-[url('/background-destination-desktop.jpg')] md:bg-[url('/background-destination-tablet.jpg')]  bg-[url('/background-destination-mobile.jpg')] bg-cover bg-center bg-no-repeat">
       <Nav />
       <main className="flex align-center flex-col md:mt-10">
         <h1 className="lg:px-24 font-barlow-condensed text-white lg:text-xl md:text-lg md:px-8 text-center md:text-left tracking-[0.25em]">
@@ -22,7 +22,7 @@ const Destination = () => {
           <div className="md:mt-2">
             <div className="flex justify-center lg:justify-start space-x-8 text-white font-barlow-condensed text-lg opacity-[0.8]">
               {["MOON", "MARS", "EUROPA", "TITAN"].map((tab, index) => (
-                <p className={`cursor-pointer ${activeTab === tab ? "border-b-2 border-[#fff] text-white" : "text-[#D0D6F9] hover:text-[#a2a9d5]"}`} onClick={() => setActivetab(tab)} key={index}>
+                <p className={`cursor-pointer text-xl ${activeTab === tab ? "border-b-2 border-[#fff] text-white" : "text-[#D0D6F9] hover:text-[#a2a9d5]"}`} onClick={() => setActivetab(tab)} key={index}>
                   {tab}
                 </p>
               ))}
@@ -113,7 +113,7 @@ const Destination = () => {
           </div>
         </div>
       </main>
-    </div>
+    </section>
   );
 };
 

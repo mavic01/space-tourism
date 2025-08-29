@@ -36,7 +36,7 @@ const Crew = () => {
   const [current, setCurrent] = useState(0);
   const crew = crewInfo[current];
   return (
-    <div className="min-h-screen lg:bg-[url('/background-crew-desktop.jpg')] md:bg-[url('/background-crew-tablet.jpg')]  bg-[url('/background-crew-mobile.jpg')] bg-cover bg-center bg-no-repeat">
+    <section className="min-h-screen lg:bg-[url('/background-crew-desktop.jpg')] md:bg-[url('/background-crew-tablet.jpg')]  bg-[url('/background-crew-mobile.jpg')] bg-cover bg-center bg-no-repeat">
       <Nav />
       <main className="lg:mt-2 mt:2 md:mt-8">
         <h2 className="lg:px-24 font-barlow-condensed text-white lg:text-xl md:text-lg md:px-8 text-center md:text-left tracking-[0.25em]">
@@ -80,7 +80,7 @@ const Crew = () => {
           </div>
         </div>
       </main>
-    </div>
+    </section>
   );
 };
 
