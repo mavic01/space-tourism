@@ -1,69 +1,75 @@
-# React + TypeScript + Vite
+# Space Tourism App 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of contents
 
-Currently, two official plugins are available:
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Overview
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### The challenge
+Users should be able to:
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- View the optimal layout for each of the website's pages depending on their device's screen size
+- See hover states for all interactive elements on the page
+- View each page and be able to toggle between the tabs to see new information
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### Screenshot
+![App Screenshot](https://ibb.co/KxXFB6gY) 
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Links
+- [Space Tourism App](https://space-tourism-sooty-theta.vercel.app/)  
+- [GitHub Repo](https://github.com/mavic01/space-tourism)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## My process
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Built with
+- ⚛️ React (component-based architecture)  
+- 🎨 Tailwind CSS (utility-first styling)  
+- ⚡ Vite (lightning-fast dev environment)  
+- 📱 Mobile-first workflow  
+
+### What I learned
+This project helped me:
+- Deepen my understanding of **React Router** for page navigation.  
+- Get more comfortable managing **complex Tailwind class combinations** for layout.
+- Handle **responsive images and typography scaling**.  
+
+### Continued development
+I plan to:
+- Add **Framer Motion animations** for smoother transitions between pages.  
+- Replace static data with **real API calls** (e.g., space news or NASA data).  
+- Experiment with **dark mode support** and other UI improvements.  
+- Refactor for more reusable components as I continue refining my React patterns.  
+
+### Useful resources
+- [Tailwind CSS Docs](https://tailwindcss.com/docs) – My go-to for styling decisions.  
+- [React Router Docs](https://reactrouter.com/en/main) – Super helpful for routing logic.
+
+---
+
+## Author
+👨‍💻 **Victor Iberi**  
+- [Portfolio](https://mavic-portfolio.vercel.app/) 
+- [GitHub](https://github.com/mavic01/)  
+- [LinkedIn](https://www.linkedin.com/in/victor-iberi-018904175/)  
+
+---
+
+## Acknowledgments
+Special thanks to **Frontend Mentor** for the challenge design, and to the **open-source community** for the amazing tools I used to bring this project to life.  
+
+This project is also part of my continuous learning journey as a **Frontend Engineering Student at Altschool Africa** and a **Frontend Developer Intern at Cyncra Technologies**, where I’m sharpening my skills in building real-world applications.
