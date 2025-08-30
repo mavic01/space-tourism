@@ -1,4 +1,4 @@
-# Space Tourism App 🚀
+# Space Tourism App 
 
 ## Table of contents
 
@@ -70,6 +70,6 @@ I plan to:
 ---
 
 ## Acknowledgments
-Special thanks to **Frontend Mentor** for the challenge design, and to the **open-source community** for the amazing tools I used to bring this project to life.  
+Special thanks to **Frontend Mentor** for the challenge design, **Altschool Africa**, and to the **open-source community** for the amazing tools I used to bring this project to life.  
 
 This project is also part of my continuous learning journey as a **Frontend Engineering Student at Altschool Africa** and a **Frontend Developer Intern at Cyncra Technologies**, where I’m sharpening my skills in building real-world applications.
