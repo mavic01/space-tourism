@@ -26,7 +26,7 @@ Users should be able to:
 - View each page and be able to toggle between the tabs to see new information
 
 ### Screenshot
-![App Screenshot](/public/spaceApp%20Preview.png) 
+- ![App Screenshot](/public/spaceApp%20Preview.png) 
 
 ### Links
 - [Space Tourism App](https://space-tourism-sooty-theta.vercel.app/)  
